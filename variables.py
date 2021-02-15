@@ -51,9 +51,22 @@ print(d1, d2, d3, d4)
 #  a-z A-Z 0-9 _
 
 for _ in range(5):
+    print(_)
     print("Python is great!")
 
 x = None  # nil, null, etc
+
+
+print(values[0])
+
+colors = ['red', 'purple', 'ecru', 'mauve', 'chartreuse']
+
+print(colors[0], colors[4], colors[2], colors[-1])
+animal = 'wombat'
+print(animal[0], animal[3], animal[-1])
+
+
+
 
 
 
