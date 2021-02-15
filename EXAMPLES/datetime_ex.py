@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from datetime import datetime, date, timedelta
 
 print("date.today():", date.today())  # <1>
@@ -11,6 +10,13 @@ print("now.year:", now.year)
 print("now.hour:", now.hour)
 print("now.minute:", now.minute)
 print("now.second:", now.second)
+
+today = date.today()
+james_bd = date(2014, 8, 1)
+diff = today - james_bd
+total_days = diff.days
+years, days = divmod(total_days, 365)
+print("James is {} years and {} days old".format(years, days))
 
 d1 = datetime(2018, 6, 13)  # <4>
 d2 = datetime(2018, 8, 24)
@@ -36,3 +42,5 @@ t3 = t2 - t1
 print("datetime(2016, 8, 24, 10, 4, 34):", t1)
 print("datetime(2018, 8, 24, 22, 8, 1):", t2)
 print("time diff (t2 - t1):", t3)
+
+
