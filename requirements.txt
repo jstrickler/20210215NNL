@@ -1,0 +1,10 @@
+python-dateutil
+lxml
+paramiko
+pylint
+requests
+cython
+numba
+pyqt5
+pytest
+
