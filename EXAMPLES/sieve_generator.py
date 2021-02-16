@@ -8,9 +8,9 @@ def next_prime(limit):
             continue
         for j in range(2 * i, limit + 1, i):
             flags.add(j)  # <2>
-        yield i  # <3>
+        yield i, j, 'spam'  # <3>  # like EXPR in generator expression (EXPR for ...)
 
-
-np = next_prime(200)  # <4>
-for prime in np:  # <5>
+np = next_prime(100)  # <4>
+print("What is np?", type(np))
+for prime, largest_multiple, whatever in np:  # <5>
     print(prime, end=' ')

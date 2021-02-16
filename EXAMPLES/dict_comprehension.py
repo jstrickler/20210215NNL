@@ -8,9 +8,12 @@ d = {a.lower(): len(a) for a in animals}  # <1>
 
 print(d, '\n')
 
-words = ['unicorn', 'stigmata', 'barley', 'bookkeeper']
+words = ['unicorn', 'stigmata', 'barley', 'bookkeeper', 'tire', 'rite', 'tier',
+    'evil', 'live', 'veil', 'vile']
 
 d = {w:{c:w.count(c) for c in sorted(w)} for w in words} # <2>
+# d = {w:w.count('a') for w in words} # <2>
+# print(d)
 
 for word, word_signature in d.items():
     print(word, word_signature)

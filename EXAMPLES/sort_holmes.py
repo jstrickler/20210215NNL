@@ -21,6 +21,5 @@ def strip_articles(title):  # <.>
             break
     return title
 
-
 for book in sorted(books, key=strip_articles):  # <.>
     print(book)
