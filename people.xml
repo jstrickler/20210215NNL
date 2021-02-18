@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='ASCII'?>
+<people>
+  <person product="Gates Foundation">
+    <first_name>Melinda</first_name>
+    <last_name>Gates</last_name>
+    <dob>1964-08-15</dob>
+  </person>
+  <person product="Apple">
+    <first_name>Steve</first_name>
+    <last_name>Jobs</last_name>
+    <dob>1955-02-24</dob>
+  </person>
+  <person product="Perl">
+    <first_name>Larry</first_name>
+    <last_name>Wall</last_name>
+    <dob>1954-09-27</dob>
+  </person>
+  <person product="Microsoft">
+    <first_name>Paul</first_name>
+    <last_name>Allen</last_name>
+    <dob>1953-01-21</dob>
+  </person>
+  <person product="Oracle">
+    <first_name>Larry</first_name>
+    <last_name>Ellison</last_name>
+    <dob>1944-08-17</dob>
+  </person>
+  <person product="Microsoft">
+    <first_name>Bill</first_name>
+    <last_name>Gates</last_name>
+    <dob>1955-10-28</dob>
+  </person>
+  <person product="Facebook">
+    <first_name>Mark</first_name>
+    <last_name>Zuckerberg</last_name>
+    <dob>1984-05-14</dob>
+  </person>
+  <person product="Google">
+    <first_name>Sergey</first_name>
+    <last_name>Brin</last_name>
+    <dob>1973-08-21</dob>
+  </person>
+  <person product="Google">
+    <first_name>Larry</first_name>
+    <last_name>Page</last_name>
+    <dob>1973-03-26</dob>
+  </person>
+  <person product="Linux">
+    <first_name>Linus</first_name>
+    <last_name>Torvalds</last_name>
+    <dob>1969-12-28</dob>
+  </person>
+</people>

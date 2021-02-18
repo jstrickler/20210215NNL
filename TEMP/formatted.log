@@ -1,0 +1,10 @@
+root 2021-02-18 15:17:01,214 INFO this is information
+root 2021-02-18 15:17:01,214 WARNING this is a warning
+root 2021-02-18 15:17:01,214 INFO this is information
+root 2021-02-18 15:17:01,214 CRITICAL this is critical
+root 2021-02-18 15:17:46,137 CRITICAL this is critical
+root 2021-02-18 15:17:46,137 CRITICAL Your hair's on fire!
+root 2021-02-18 15:20:37,642 CRITICAL 13 this is critical 
+root 2021-02-18 15:20:37,642 CRITICAL 14 Your hair's on fire! 
+root 2021-02-18 15:32:42,635 CRITICAL 13 this is critical 
+root 2021-02-18 15:32:42,635 CRITICAL 14 Your hair's on fire! 

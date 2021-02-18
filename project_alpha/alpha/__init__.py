@@ -6,7 +6,7 @@ It is wonderful, and here's what it does:
 Blah blah-dy blah
 """
 # "convenience import"
-from project_alpha.alpha.misc.utils import spam
+from alpha.misc.utils import spam
 print("importing alpha")
 TEXAS_BREAKFAST = ["snakes", "steaks", "PhDs"]
 import sqlite3

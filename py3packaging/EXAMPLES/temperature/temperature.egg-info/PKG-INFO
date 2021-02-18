@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: temperature
+Version: 1.2
+Summary: Class for converting temperatures
+Home-page: http://www.cja-tech.com/temperature
+Author: John Strickler
+Author-email: jstrickler@gmail.com
+License: MIT
+Description: Long description here....
+Platform: UNKNOWN

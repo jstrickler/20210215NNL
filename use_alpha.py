@@ -1,4 +1,4 @@
-from project_alpha import alpha
+from alpha import alpha
 
 alpha.spam()
 print(alpha.TEXAS_BREAKFAST)
