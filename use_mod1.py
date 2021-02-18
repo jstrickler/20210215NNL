@@ -1,4 +1,4 @@
-from alpha.misc import utils
+from project_alpha.alpha.misc import utils
 import sys
 
 utils.spam()

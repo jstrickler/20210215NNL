@@ -1,4 +1,4 @@
-from alpha.misc.utils import spam as meat, toast as bread, seek
+from project_alpha.alpha.misc.utils import spam as meat, toast as bread, seek
 
 meat()
 bread()
