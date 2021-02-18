@@ -11,6 +11,12 @@ class SelectablesMain(QMainWindow):
         self.ui = Ui_Selectables()
         self.ui.setupUi(self)
 
+
+
+
+    def _cb_clicked(self):
+        print("Clicked the checkbox")
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     main = SelectablesMain()

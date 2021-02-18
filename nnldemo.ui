@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NNLDemo</class>
+ <widget class="QMainWindow" name="NNLDemo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>158</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NNL PyQt5 Demo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_first_name">
+          <property name="text">
+           <string>FIrst Name</string>
+          </property>
+          <property name="buddy">
+           <cstring>le_first_name</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_first_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_last_name">
+          <property name="text">
+           <string>Last Name</string>
+          </property>
+          <property name="buddy">
+           <cstring>le_last_name</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_last_name"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="bt_yes">
+          <property name="text">
+           <string>Yes</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bt_no">
+          <property name="text">
+           <string>No</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bt_maybe">
+          <property name="text">
+           <string>Maybe</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>498</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+   </widget>
+   <widget class="QMenu" name="menuAnimals">
+    <property name="title">
+     <string>Animals</string>
+    </property>
+    <addaction name="actionWombat"/>
+    <addaction name="actionHoney_Badger"/>
+    <addaction name="actionPine_Marten"/>
+    <addaction name="actionLeast_weasel"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAnimals"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionWombat">
+   <property name="text">
+    <string>Wombat</string>
+   </property>
+  </action>
+  <action name="actionHoney_Badger">
+   <property name="text">
+    <string>Honey Badger</string>
+   </property>
+  </action>
+  <action name="actionPine_Marten">
+   <property name="text">
+    <string>Pine Marten</string>
+   </property>
+  </action>
+  <action name="actionLeast_weasel">
+   <property name="text">
+    <string>Least weasel</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>le_first_name</tabstop>
+  <tabstop>le_last_name</tabstop>
+  <tabstop>bt_yes</tabstop>
+  <tabstop>bt_no</tabstop>
+  <tabstop>bt_maybe</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>NNLDemo</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -30,6 +30,7 @@ msg['to'] = RECIPIENTS  # <12>
 
 try:
     smtpserver.send_message(msg)  # <13>
+    print("Message sent.")
 except smtplib.SMTPException as err:
     print("Unable to send mail:", err)
 finally:
