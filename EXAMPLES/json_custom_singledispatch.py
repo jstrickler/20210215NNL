@@ -52,6 +52,11 @@ def encode_date(date_obj):
 def encode_parrot(parrot_obj):
     return {'name': parrot_obj.name, 'color': parrot_obj.color}
 
+encode(123)
+p = Parrot()
+encode(p)
+d = date(2021, 1, 22)
+encode(d)
 
 # register other encoding functions here
 

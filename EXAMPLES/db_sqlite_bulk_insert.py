@@ -65,11 +65,12 @@ def populate_database(conn):
     :param conn: The database connection
     :return: None
     """
-
+    # insert into fruit (name, price) values (?, ?)
     fruit_data = get_fruit_data()  # [('apple', .49), ('kiwi', .38)]
 
     try:
-        conn.executemany(INSERT, fruit_data)  # <7>
+        for data in fruit_data:
+            conn.execute(INSERT, data)  # <7>
     except sqlite3.DatabaseError as err:
         print(err)
         conn.rollback()

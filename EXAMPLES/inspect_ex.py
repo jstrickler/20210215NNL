@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-
 import inspect
-
 
 class Spam:  # <1>
     pass
 
-def ham(p1, p2='a', *p3, p4, p5='b', **p6):  # <2>
+s = Spam()
+
+def ham(p1: int, p2: str='a', *p3, p4: float, p5: str='b', **p6) -> None:  # <2>
     print(p1, p2, p3, p4, p5, p6)
 
 

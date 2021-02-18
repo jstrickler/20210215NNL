@@ -17,8 +17,8 @@ cur = s3conn.cursor()
 # select first name, last name from all presidents
 cur.execute(NAME_QUERY)
 
-for row in cur.fetchall():
-    print(row)
+for first_name, last_name in cur.fetchall():
+    print(first_name, last_name)
 print('-' * 50)
 
 dcur = s3conn.cursor()  # <1>

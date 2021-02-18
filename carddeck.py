@@ -1,6 +1,15 @@
+"""
+Provide CardDeck class
+"""
 import random
 
 class CardDeck:
+    """
+    Represent a standard deck of playing cards.
+
+    Synopsis:
+    deck_obj = CardDeck("Dealername")
+    """
     SUITS = 'Clubs Diamonds Hearts Spades'.split()
     RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
 
@@ -14,6 +23,7 @@ class CardDeck:
             for rank in self.RANKS:
                 card = rank, suit
                 self._cards.append(card)
+
     @property
     def cards(self):
         return self._cards
@@ -24,10 +34,12 @@ class CardDeck:
 
     @dealer.setter
     def dealer(self, value):
-        if isinstance(value, str):
-            self._dealer = value
-        else:
+        if not isinstance(value, str):
             raise TypeError("Dealer must be a string")
+        elif len(value) == 0:
+            raise ValueError("Empty dealer name not allowed")
+        else:
+            self._dealer = value
 
     def shuffle(self): # instance method
         random.shuffle(self._cards)
@@ -37,6 +49,7 @@ class CardDeck:
 
     @classmethod
     def get_suits(cls):
+        """return list of suits"""
         return cls.SUITS
 
     def __len__(self):
@@ -62,5 +75,7 @@ class CardDeck:
         hands = [self._cards[:size]]
         return hands
 
-    def foo(self):
+    @staticmethod
+    def doit():
+        """Just some function, you know?"""
         return 42
